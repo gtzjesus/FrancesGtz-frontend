@@ -27,6 +27,7 @@ const StyledNavigation = styled.div`
   height: var(--height-navigation);
   color: var(--color-white);
 
+  // Code logic for adding borders
   border-bottom: 1px solid var(--color-white);
   margin: 1em 0;
   padding: 0;

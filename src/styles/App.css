@@ -4,7 +4,7 @@
   margin: 0;
   padding: 0;
   text-decoration: none;
-  color: inherit;
+  color: var(--color-white);
   list-style: none;
 }
 
