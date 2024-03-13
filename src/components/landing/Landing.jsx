@@ -38,7 +38,7 @@ function Landing() {
   return (
     <StyledLanding>
       <LandingIntroduction>
-        <Title>Discover the perfect home</Title>
+        <Title>Discover the perfect home.</Title>
         <SubTitle>serving through Millennium 2000</SubTitle>
         <SubTitle>based in El Paso, TX</SubTitle>
       </LandingIntroduction>

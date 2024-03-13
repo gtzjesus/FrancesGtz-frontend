@@ -59,6 +59,7 @@ function Navigation() {
           </Logo>
           <Element>contact</Element>
         </NavElements>
+        <hr />
       </StyledNavigation>
     </>
   );
