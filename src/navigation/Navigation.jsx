@@ -24,7 +24,7 @@ const StyledNavigation = styled.div`
   width: var(--width-full-window);
   z-index: var(--z-top);
   height: var(--height-navigation);
-  font-size: var(--font-xxxsmall);
+  font-size: var(--font-small);
   color: var(--color-white);
 `;
 
@@ -46,11 +46,11 @@ function Navigation() {
   return (
     <StyledNavigation>
       <NavElements>
-        <Element>link</Element>
-        <Element>link</Element>
-        <Element>WorldHello</Element>
-        <Element>link</Element>
-        <Element>link</Element>
+        <Element>about</Element>
+        <Element>houses</Element>
+        <Element>frances gutierrez</Element>
+        <Element>millennium</Element>
+        <Element>contact</Element>
       </NavElements>
     </StyledNavigation>
   );
