@@ -49,8 +49,8 @@ const GlobalStyles = createGlobalStyle`
     --font-xxxsmall: 1rem;
     --font-xxsmall: 1.25rem;
     --font-xsmall: 1.35rem;
-    --font-small: 1.5rem;
-    --font-medium: 2.5rem;
+    --font-small: 1.85rem;
+    --font-medium: 2.75rem;
     --font-large: 3rem;
     --font-xlarge: 4rem;
     --font-xxlarge: 7rem;

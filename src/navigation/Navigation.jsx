@@ -24,7 +24,6 @@ const StyledNavigation = styled.div`
   width: var(--width-full-window);
   z-index: var(--z-top);
   height: var(--height-navigation);
-  font-size: var(--font-small);
   color: var(--color-white);
 `;
 
