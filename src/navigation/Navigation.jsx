@@ -54,10 +54,10 @@ function Navigation() {
       <NavElements>
         <Element>houses</Element>
         <Logo>
-          frances <br />
-          gutierrez
+          Frances <br />
+          Gutierrez
         </Logo>
-        <Element>millennium</Element>
+        <Element>contact</Element>
       </NavElements>
     </StyledNavigation>
   );
