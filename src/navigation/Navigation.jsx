@@ -25,6 +25,7 @@ const StyledNavigation = styled.div`
   z-index: var(--z-top);
   height: var(--height-navigation);
   font-size: var(--font-xxxsmall);
+  color: var(--color-white);
 `;
 
 const NavElements = styled.div`
