@@ -36,7 +36,12 @@ const NavElements = styled.div`
   margin: 0 auto; /* Center the flex container horizontally */
 `;
 
-const Element = styled.a``;
+const Element = styled.a`
+  font-size: var(--font-small);
+`;
+const Logo = styled.a`
+  font-size: var(--font-medium);
+`;
 
 // ------------------------------
 // Component
@@ -46,11 +51,9 @@ function Navigation() {
   return (
     <StyledNavigation>
       <NavElements>
-        <Element>about</Element>
         <Element>houses</Element>
-        <Element>frances gutierrez</Element>
+        <Logo>francesgutierrez</Logo>
         <Element>millennium</Element>
-        <Element>contact</Element>
       </NavElements>
     </StyledNavigation>
   );
