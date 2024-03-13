@@ -17,7 +17,6 @@ import styled from 'styled-components';
 const StyledLanding = styled.div`
   position: relative; /* Add position relative for overlay */
   overflow: hidden; /* Ensure overlay doesn't overflow */
-  min-height: 70vh;
 `;
 
 const LandingIntroduction = styled.div`
@@ -27,6 +26,7 @@ const LandingIntroduction = styled.div`
   align-items: center;
   justify-content: center;
   z-index: 1; /* Ensure content is above the overlay */
+  padding-top: var(--height-navigation);
 `;
 
 const Title = styled.span`
@@ -34,9 +34,9 @@ const Title = styled.span`
   text-transform: uppercase;
   margin: 0 auto;
   text-align: center;
-  padding-top: var(--padding-xxlarge);
   line-height: 3.75rem;
   color: white; /* Set text color */
+  padding-top: var(--height-navigation);
 `;
 
 const SubTitle = styled.span`

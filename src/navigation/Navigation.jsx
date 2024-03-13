@@ -29,8 +29,6 @@ const StyledNavigation = styled.div`
 
   // Code logic for adding borders
   border-bottom: 1px solid var(--color-white);
-  margin: 1em 0;
-  padding: 0;
 `;
 
 const NavElements = styled.div`
@@ -43,14 +41,12 @@ const NavElements = styled.div`
 
 const Element = styled.a`
   font-size: var(--font-small);
-
   border-bottom: 1px solid var(--color-white);
-  margin: 1em 0;
-  padding: 0;
+  margin: 0 0 1em 0;
 `;
 const Logo = styled.a`
   font-size: var(--font-medium);
-  line-height: 1.75rem;
+  line-height: 2rem;
 `;
 
 // ------------------------------
