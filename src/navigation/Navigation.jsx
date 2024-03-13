@@ -25,6 +25,10 @@ const StyledNavigation = styled.div`
   z-index: var(--z-top);
   height: var(--height-navigation);
   color: var(--color-white);
+
+  border-bottom: 1px solid var(--color-white);
+  margin: 1em 0;
+  padding: 0;
 `;
 
 const NavElements = styled.div`
@@ -59,7 +63,6 @@ function Navigation() {
           </Logo>
           <Element>contact</Element>
         </NavElements>
-        <hr />
       </StyledNavigation>
     </>
   );
