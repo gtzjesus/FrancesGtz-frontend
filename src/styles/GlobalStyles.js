@@ -42,7 +42,7 @@ const GlobalStyles = createGlobalStyle`
     --color-white: #ffff;
     --color-blue: #455e71;
     --color-green: #6A7744;
-    --color-tan: #EDDAD5;
+    --color-tan: #EFEEEC;
     --color-purple: #6B4C8A;
 
     /* Text Size */
