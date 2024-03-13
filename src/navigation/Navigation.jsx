@@ -41,6 +41,7 @@ const Element = styled.a`
 `;
 const Logo = styled.a`
   font-size: var(--font-medium);
+  line-height: 1.5rem;
 `;
 
 // ------------------------------
@@ -52,7 +53,10 @@ function Navigation() {
     <StyledNavigation>
       <NavElements>
         <Element>houses</Element>
-        <Logo>francesgutierrez</Logo>
+        <Logo>
+          frances <br />
+          gutierrez
+        </Logo>
         <Element>millennium</Element>
       </NavElements>
     </StyledNavigation>

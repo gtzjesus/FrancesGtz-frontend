@@ -20,7 +20,7 @@ const GlobalStyles = createGlobalStyle`
     --height-full-window: 100vh;
     --height-percentage-window: 100%;
     --height-row: 10rem;
-    --height-navigation: 3.5rem;
+    --height-navigation: 5rem;
 
     /* Extra Heights */
     --height-navigation-padding: 5rem;
