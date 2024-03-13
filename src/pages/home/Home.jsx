@@ -2,6 +2,7 @@
 
 import styled from 'styled-components';
 import Navigation from '../../navigation/Navigation';
+import Landing from '../../components/landing/Landing';
 
 const ResponsiveContainer = styled.div`
   @media (min-width: 768px) {
@@ -15,7 +16,9 @@ function Home() {
   return (
     <>
       <Navigation />
-      <ResponsiveContainer></ResponsiveContainer>
+      <ResponsiveContainer>
+        <Landing />
+      </ResponsiveContainer>
     </>
   );
 }

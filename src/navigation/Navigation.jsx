@@ -49,16 +49,18 @@ const Logo = styled.a`
 // This section has our React Component which handles the every individual house added to supabase
 function Navigation() {
   return (
-    <StyledNavigation>
-      <NavElements>
-        <Element>houses</Element>
-        <Logo>
-          Frances <br />
-          Gutierrez
-        </Logo>
-        <Element>contact</Element>
-      </NavElements>
-    </StyledNavigation>
+    <>
+      <StyledNavigation>
+        <NavElements>
+          <Element>houses</Element>
+          <Logo>
+            Frances <br />
+            Gutierrez
+          </Logo>
+          <Element>contact</Element>
+        </NavElements>
+      </StyledNavigation>
+    </>
   );
 }
 
