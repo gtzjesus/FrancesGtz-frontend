@@ -19,11 +19,13 @@ const WelcomeTitle = styled.div`
   display: flex;
   justify-content: center;
   text-transform: uppercase;
+  font-size: var(--font-small);
+
   // Code logic for adding borders
   border-bottom: 1px solid var(--color-white);
   border-top: 1px solid var(--color-white);
   margin: 1em 0;
-  padding: 2em 0;
+  padding: 1em 0;
 `;
 const StyledHouses = styled.div`
   color: var(--color-black);

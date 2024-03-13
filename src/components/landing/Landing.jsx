@@ -17,6 +17,7 @@ import styled from 'styled-components';
 const StyledLanding = styled.div`
   position: relative; /* Add position relative for overlay */
   overflow: hidden; /* Ensure overlay doesn't overflow */
+  min-height: 50vh;
 `;
 
 const LandingIntroduction = styled.div`
