@@ -15,6 +15,7 @@ import styled from 'styled-components';
 // This section has all CSS styles configured for every HTML element.
 const StyledNavigation = styled.div`
   // Code logic to arrange children
+  font-family: 'Reenie Beanie', cursive;
   display: flex;
   align-items: center;
   justify-content: space-between;

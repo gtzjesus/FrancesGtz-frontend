@@ -1,8 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Reenie+Beanie&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Boogaloo&family=Reenie+Beanie&display=swap');
 * {
-  font-family: 'Reenie Beanie', cursive;
-  font-weight: 100;
-  font-style: normal;
   margin: 0;
   padding: 0;
   text-decoration: none;
@@ -12,6 +10,8 @@
 
 body {
   background: var(--color-tan);
+  font-family: 'Boogaloo', sans-serif;
+  font-weight: 400;
 }
 
 /* Media query for larger devices */
