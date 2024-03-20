@@ -12,6 +12,10 @@ import { useEffect, useState } from 'react';
 import styled from 'styled-components';
 import House from './House';
 
+import Slider from 'react-slick';
+import 'slick-carousel/slick/slick.css';
+import 'slick-carousel/slick/slick-theme.css';
+
 // ------------------------------
 // Styled Componenets
 // ------------------------------
@@ -29,12 +33,12 @@ const WelcomeTitle = styled.div`
   margin: 1em 0;
   padding: 1em 0;
 `;
-const StyledHouses = styled.div`
-  color: var(--color-black);
-  overflow-x: auto; /* Enable horizontal scrolling */
-  white-space: nowrap; /* Ensure all houses are displayed in a single line */
-  padding: 20px; /* Add some padding for better appearance */
-`;
+// const StyledHouses = styled.div`
+//   color: var(--color-black);
+//   overflow-x: auto; /* Enable horizontal scrolling */
+//   white-space: nowrap; /* Ensure all houses are displayed in a single line */
+//   padding: 20px; /* Add some padding for better appearance */
+// `;
 
 const HouseContainer = styled.div`
   display: inline-block; /* Display houses in a single row */
@@ -70,14 +74,14 @@ function Houses() {
   return (
     <>
       <WelcomeTitle>Featured Houses</WelcomeTitle>
-      <StyledHouses>
+      <Slider>
         {houses.length > 0 &&
           houses.map((house) => (
             <HouseContainer key={house.id}>
               <House house={house} />
             </HouseContainer>
           ))}
-      </StyledHouses>
+      </Slider>
     </>
   );
 }
