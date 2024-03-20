@@ -30,12 +30,11 @@ const Details = styled.div`
   position: absolute; /* Position the details absolutely */
   bottom: 0; /* Position details at the vertical center */
   left: 50%; /* Position details at the horizontal center */
-  transform: translate(-50%, -50%); /* Center the details */
+  transform: translate(-50%, -15%); /* Center the details */
   text-align: center;
-  padding: var(--padding-xxxsmall) var(--padding-medium);
+  padding: var(--padding-xsmall) var(--padding-medium);
   background-color: rgba(21, 19, 19, 0.7); /* Semi-transparent background */
   border-radius: 10px;
-  gap: var(--gap-large);
 `;
 
 const Address = styled.span`
@@ -49,19 +48,19 @@ const Price = styled.span`
 const Additional = styled.div`
   display: flex;
   justify-content: center;
-  padding-bottom: var(--padding-small);
+  gap: var(--gap-small);
 `;
 
 const Beds = styled.span`
-  font-size: var(--font-xsmall);
+  font-size: var(--font-xxsmall);
 `;
 
 const Baths = styled.span`
-  font-size: var(--font-xsmall);
+  font-size: var(--font-xxsmall);
 `;
 
 const Sqft = styled.span`
-  font-size: var(--font-xsmall);
+  font-size: var(--font-xxsmall);
 `;
 
 // ------------------------------
@@ -93,7 +92,8 @@ function House({ house }) {
         <Price>${Home.price.toLocaleString()}</Price>
         <hr />
         <Address>{Home.address}</Address>
-        <hr />
+        <br />
+        <br />
         <Additional>
           <Beds>{Home.beds} beds</Beds>
           <Baths>{Home.baths} baths</Baths>
