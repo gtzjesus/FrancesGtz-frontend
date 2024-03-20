@@ -15,25 +15,27 @@
 import styled from 'styled-components';
 
 const StyledHouse = styled.div`
-  // Code logic to display every design side-by-side
+  position: relative; /* Position the container relatively */
   display: inline-block;
   overflow: hidden;
   width: var(--width-filled-window);
 `;
 
 const Video = styled.video`
-  // Code logic to style video (mp4)
   width: 100%;
   height: 70vh;
 `;
 
 const Details = styled.div`
-  display: flex;
-  flex-direction: column;
-  margin: 0 auto;
+  position: absolute; /* Position the details absolutely */
+  top: 50%; /* Position details at the vertical center */
+  left: 50%; /* Position details at the horizontal center */
+  transform: translate(-50%, -50%); /* Center the details */
   text-align: center;
-  padding: var(--padding-xxxsmall) var(--padding-medium) 0 var(--padding-medium);
-  gap: var(--gap-small);
+  padding: var(--padding-xxxsmall) var(--padding-medium);
+  background-color: rgba(21, 19, 19, 0.7); /* Semi-transparent background */
+  border-radius: 10px;
+  gap: var(--gap-large);
 `;
 
 const Address = styled.span`
@@ -61,6 +63,7 @@ const Baths = styled.span`
 const Sqft = styled.span`
   font-size: var(--font-xsmall);
 `;
+
 // ------------------------------
 // Component
 // ------------------------------
