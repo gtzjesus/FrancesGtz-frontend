@@ -8,7 +8,7 @@
 // Imports
 // ------------------------------
 // This section has all necessary imports for this component.
-import { useEffect, useState } from 'react';
+import { useEffect, useRef, useState } from 'react';
 import styled from 'styled-components';
 import House from './House';
 
@@ -27,8 +27,6 @@ const WelcomeTitle = styled.div`
   justify-content: center;
   text-transform: uppercase;
   font-size: var(--font-small);
-
-  // Code logic for adding borders
   border-bottom: 1px solid var(--color-white);
   border-top: 1px solid var(--color-white);
   margin: 1em 0;
@@ -36,25 +34,37 @@ const WelcomeTitle = styled.div`
 `;
 
 const SliderWrapper = styled.div`
-  overflow-x: auto; /* Enable horizontal scrolling */
-  overflow-y: hidden; /* Hide vertical scrollbar */
-  scrollbar-width: thin; /* Set the width of the scrollbar */
-  scrollbar-color: transparent transparent; /* Set the color of the scrollbar */
+  position: relative;
 `;
 
 const HouseContainer = styled.div`
-  display: inline-block; /* Display houses in a single row */
-  margin-right: 20px; /* Add some spacing between houses */
+  display: inline-block;
+  margin-right: 20px;
 `;
 
-// ------------------------------
-// Component
-// ------------------------------
-// This section has our React Component which handles the hook data
+const ButtonWrapper = styled.div`
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  padding: 0 20px;
+  box-sizing: border-box;
+`;
+
+const Button = styled.button`
+  background-color: transparent;
+  color: white;
+  font-size: 24px;
+  border: none;
+  cursor: pointer;
+`;
+
 function Houses() {
   const [houses, setHouses] = useState([]);
+  const sliderRef = useRef();
 
-  // Fetch houses data API as soon as component mounts
   useEffect(() => {
     async function fetchHouses() {
       try {
@@ -64,28 +74,45 @@ function Houses() {
         if (!response.ok) {
           throw new Error('Failed to fetch houses');
         }
-
         const data = await response.json();
-        setHouses(data); // Update the state with fetched houses
+        setHouses(data);
       } catch (error) {
         console.error(error);
       }
     }
     fetchHouses();
   }, []);
+
+  const goToPreviousHouse = () => {
+    if (sliderRef.current) {
+      sliderRef.current.slickPrev();
+    }
+  };
+
+  const goToNextHouse = () => {
+    if (sliderRef.current) {
+      sliderRef.current.slickNext();
+    }
+  };
+
   return (
     <>
       <WelcomeTitle>Featured Houses</WelcomeTitle>
-      <SliderWrapper>
-        <Slider arrows={true}>
-          {houses.length > 0 &&
-            houses.map((house) => (
+      {houses.length > 0 && (
+        <SliderWrapper>
+          <Slider ref={sliderRef}>
+            {houses.map((house) => (
               <HouseContainer key={house.id}>
                 <House house={house} />
               </HouseContainer>
             ))}
-        </Slider>
-      </SliderWrapper>
+          </Slider>
+          <ButtonWrapper>
+            <Button onClick={goToPreviousHouse}>{'<'}</Button>
+            <Button onClick={goToNextHouse}>{'>'}</Button>
+          </ButtonWrapper>
+        </SliderWrapper>
+      )}
     </>
   );
 }
