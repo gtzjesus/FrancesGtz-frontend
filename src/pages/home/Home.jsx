@@ -19,8 +19,8 @@ function Home() {
       <Navigation />
       <ResponsiveContainer>
         <Landing />
-        <Houses />
       </ResponsiveContainer>
+      <Houses />
     </>
   );
 }
