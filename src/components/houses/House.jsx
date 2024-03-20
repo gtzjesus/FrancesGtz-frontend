@@ -14,6 +14,10 @@
 // This section has all necessary imports for this component.
 import styled from 'styled-components';
 
+// ------------------------------
+// Styled Componenets
+// ------------------------------
+// This section has all CSS styles configured for every HTML element.
 const StyledHouse = styled.div`
   position: relative; /* Position the container relatively */
   display: inline-block;

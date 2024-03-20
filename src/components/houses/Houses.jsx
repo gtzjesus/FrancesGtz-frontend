@@ -12,6 +12,7 @@ import { useEffect, useState } from 'react';
 import styled from 'styled-components';
 import House from './House';
 
+// This section has all necessary imports for the slider from react slick
 import Slider from 'react-slick';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
@@ -76,7 +77,7 @@ function Houses() {
     <>
       <WelcomeTitle>Featured Houses</WelcomeTitle>
       <SliderWrapper>
-        <Slider>
+        <Slider arrows={true}>
           {houses.length > 0 &&
             houses.map((house) => (
               <HouseContainer key={house.id}>
