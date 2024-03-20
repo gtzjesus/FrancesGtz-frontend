@@ -28,7 +28,7 @@ const Video = styled.video`
 
 const Details = styled.div`
   position: absolute; /* Position the details absolutely */
-  top: 50%; /* Position details at the vertical center */
+  bottom: 0; /* Position details at the vertical center */
   left: 50%; /* Position details at the horizontal center */
   transform: translate(-50%, -50%); /* Center the details */
   text-align: center;
@@ -49,7 +49,7 @@ const Price = styled.span`
 const Additional = styled.div`
   display: flex;
   justify-content: center;
-  gap: var(--gap-medium);
+  padding-bottom: var(--padding-small);
 `;
 
 const Beds = styled.span`
@@ -90,8 +90,10 @@ function House({ house }) {
         <source src={Home.video} type="video/mp4" />
       </Video>
       <Details>
-        <Address>{Home.address}</Address>
         <Price>${Home.price.toLocaleString()}</Price>
+        <hr />
+        <Address>{Home.address}</Address>
+        <hr />
         <Additional>
           <Beds>{Home.beds} beds</Beds>
           <Baths>{Home.baths} baths</Baths>

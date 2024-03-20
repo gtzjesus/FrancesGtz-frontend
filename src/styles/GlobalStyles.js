@@ -56,6 +56,7 @@ const GlobalStyles = createGlobalStyle`
     --font-xxlarge: 7rem;
     --font-xxxlarge: 10rem;
     --font-form: 0.75rem;
+    --font-price: 2rem;
 
 
 
