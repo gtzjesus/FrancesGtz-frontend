@@ -35,6 +35,12 @@ const WelcomeTitle = styled.div`
 
 const SliderWrapper = styled.div`
   position: relative;
+
+  /* Hide default arrows */
+  .slick-prev,
+  .slick-next {
+    display: none !important;
+  }
 `;
 
 const HouseContainer = styled.div`
@@ -61,10 +67,12 @@ const Button = styled.button`
   cursor: pointer;
 `;
 
+// Houses component
 function Houses() {
   const [houses, setHouses] = useState([]);
   const sliderRef = useRef();
 
+  // Fetch houses data from API
   useEffect(() => {
     async function fetchHouses() {
       try {
@@ -83,12 +91,14 @@ function Houses() {
     fetchHouses();
   }, []);
 
+  // Function to navigate to the previous house
   const goToPreviousHouse = () => {
     if (sliderRef.current) {
       sliderRef.current.slickPrev();
     }
   };
 
+  // Function to navigate to the next house
   const goToNextHouse = () => {
     if (sliderRef.current) {
       sliderRef.current.slickNext();
@@ -100,6 +110,7 @@ function Houses() {
       <WelcomeTitle>Featured Houses</WelcomeTitle>
       {houses.length > 0 && (
         <SliderWrapper>
+          {/* Slider component with custom navigation buttons */}
           <Slider ref={sliderRef}>
             {houses.map((house) => (
               <HouseContainer key={house.id}>
@@ -107,6 +118,7 @@ function Houses() {
               </HouseContainer>
             ))}
           </Slider>
+          {/* Custom navigation buttons */}
           <ButtonWrapper>
             <Button onClick={goToPreviousHouse}>{'<'}</Button>
             <Button onClick={goToNextHouse}>{'>'}</Button>
