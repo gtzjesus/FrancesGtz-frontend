@@ -31,19 +31,14 @@ const WelcomeTitle = styled.div`
 `;
 const StyledHouses = styled.div`
   color: var(--color-black);
-  overflow-x: hidden;
+  overflow-x: auto; /* Enable horizontal scrolling */
+  white-space: nowrap; /* Ensure all houses are displayed in a single line */
+  padding: 20px; /* Add some padding for better appearance */
 `;
 
-const HousesArea = styled.div`
-  // Code logic to cover the full screen of the device user is in
-  margin: 0 auto;
-  max-width: var(--width-filled-window);
-`;
-
-const HousesAreaSlider = styled.div`
-  // Code logic for slider (multiple videos)
-  white-space: nowrap;
-  transition: ease 1100ms;
+const HouseContainer = styled.div`
+  display: inline-block; /* Display houses in a single row */
+  margin-right: 20px; /* Add some spacing between houses */
 `;
 
 // ------------------------------
@@ -76,19 +71,12 @@ function Houses() {
     <>
       <WelcomeTitle>Featured Houses</WelcomeTitle>
       <StyledHouses>
-        <HousesArea>
-          {houses.length > 0 && (
-            <HousesAreaSlider>
-              {houses.map((house) => (
-                <House
-                  key={house.id}
-                  house={house}
-                  style={{ width: `${100 / houses.length}%` }}
-                />
-              ))}
-            </HousesAreaSlider>
-          )}
-        </HousesArea>
+        {houses.length > 0 &&
+          houses.map((house) => (
+            <HouseContainer key={house.id}>
+              <House house={house} />
+            </HouseContainer>
+          ))}
       </StyledHouses>
     </>
   );
