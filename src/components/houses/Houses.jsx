@@ -58,7 +58,7 @@ function Houses() {
     async function fetchHouses() {
       try {
         const response = await fetch(
-          'https://francesgtz-backend-e45242e4f678.herokuapp.com/api/houses'
+          'https://francesgtz-backend-655b88691bf1.herokuapp.com/api/houses'
         );
         if (!response.ok) {
           throw new Error('Failed to fetch houses');
