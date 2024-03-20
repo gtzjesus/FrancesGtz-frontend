@@ -71,7 +71,7 @@ const Sqft = styled.span`
 // Component
 // ------------------------------
 // This section has our React Component which handles the every individual house added to supabase
-function House({ house }) {
+function House({ house, preloadVideo }) {
   // Code logic to check house object
   if (!house) {
     return <div>No house data available</div>;
@@ -89,7 +89,7 @@ function House({ house }) {
 
   return (
     <StyledHouse>
-      <Video preload="auto" autoPlay loop muted playsInline>
+      <Video preload={preloadVideo} autoPlay loop muted playsInline>
         <source src={Home.video} type="video/mp4" />
       </Video>
       <Details>

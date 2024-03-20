@@ -114,7 +114,11 @@ function Houses() {
           <Slider ref={sliderRef}>
             {houses.map((house) => (
               <HouseContainer key={house.id}>
-                <House house={house} />
+                {/* Lazy load video by setting preload attribute to 'metadata' */}
+                <House
+                  house={house}
+                  preloadVideo="metadata" // Add preloadVideo prop
+                />
               </HouseContainer>
             ))}
           </Slider>
