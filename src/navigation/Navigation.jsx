@@ -58,7 +58,7 @@ function Navigation() {
     <>
       <StyledNavigation>
         <NavElements>
-          <Element>houses</Element>
+          <Element>about me</Element>
           <Logo>
             Frances <br />
             Gutierrez
