@@ -41,10 +41,9 @@ const Title = styled.span`
 
 const SubTitle = styled.span`
   font-size: var(--font-xsmall);
-  text-transform: uppercase;
   margin: 0 auto;
   text-align: center;
-  padding-top: var(--padding-small);
+  padding-top: var(--padding-medium);
   color: white; /* Set text color */
 `;
 
@@ -58,7 +57,7 @@ function Landing() {
       <LandingIntroduction>
         <Title>Discover the perfect home.</Title>
         <SubTitle>
-          serving through Millennium 2000, <br />
+          Serving through Millennium 2000, <br />
           based in El Paso, TX.
         </SubTitle>
         <SubTitle></SubTitle>

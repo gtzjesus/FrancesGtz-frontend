@@ -28,7 +28,9 @@ const Details = styled.div`
   justify-content: center;
 `;
 
-const Realtor = styled.img``;
+const Realtor = styled.img`
+  padding: var(--padding-medium) 0;
+`;
 // ------------------------------
 // Component
 // ------------------------------
@@ -36,7 +38,7 @@ const Realtor = styled.img``;
 function About() {
   return (
     <StyledAbout>
-      <Title>About me</Title>
+      <Title>About Me</Title>
       <Details>
         <Realtor src="/backgrounds/frances.png"></Realtor>
       </Details>
