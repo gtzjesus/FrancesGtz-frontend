@@ -18,32 +18,20 @@ import { useState } from 'react';
 // This section contains an array of objects. Our frequently asked questions with the provided answers
 const faqs = [
   {
-    title: 'What advantages come with a personalized website?',
-    text: 'Crafting a distinct brand that effectively communicates the value you offer to your audience is vital for establishing a robust business presence. Tailored website designs empower you to construct your online platform in a manner that lays the foundation for your success!',
+    title: 'What advantages come with your property valuation?',
+    text: 'A few is to guide buyers in making informed purchasing choices and aid sellers in determining optimal listing prices.',
   },
   {
-    title: 'What sets WorldHello apart from the rest?',
-    text: 'Our website development agency prioritizes delivering tangible business outcomes rather than merely ticking off tasks. We firmly believe in the pursuit of perfection, emphasizing focused expertise, which is why we specialize exclusively in web development services!',
+    title: 'How do you go about a market analysis?',
+    text: 'By supporting clients in navigating the housing market, identify trends, and facilitate strategic investment decisions.',
   },
   {
-    title: 'What services do you offer?',
-    text: 'WorldHello specializes in crafting websites tailored to your specific niche by employing strategic design, compelling copywriting, and intuitive user experience. If you already have a design in mind, we can handle the development process, ensuring it reflects and supports your business objectives.',
+    title: 'What about negotiation expertise?',
+    text: ' I negotiate price, sale terms, and contract specifics on behalf of clients.',
   },
   {
-    title: 'What is the typical timeframe for website development?',
-    text: 'The duration for crafting a website fluctuates depending on the intricacy and specifications of your project. Generally, our team dedicates approximately 5 to 9 weeks, starting from the initial discovery session to the final launch of your new website.',
-  },
-  {
-    title: 'Is there ongoing support once website is complete?',
-    text: 'At WorldHello, our dedication lies in nurturing enduring partnerships with our clients, prioritizing ongoing support and maintenance services over one-time transactions. We are here to ensure your website remains current and operates at its best.',
-  },
-  {
-    title: 'What does the web development process entail?',
-    text: 'To optimize outcomes aligned with your business objectives, we adhere to a meticulous development process: We commence by defining your websites purpose, conduct thorough market research, devise a performance strategy to attract new clients, design a bespoke layout tailored for conversions, execute the design, and ultimately launch your new website. ',
-  },
-  {
-    title: 'Where is WorldHello located?',
-    text: 'WorldHello, a Texas-based Website Development Agency, extends its services globally! Whether you are in close proximity or across the globe, our commitment remains unwavering to deliver outstanding results for every online venture.',
+    title: 'Any property marketing?',
+    text: 'I help develop impactful marketing strategies to highlight properties for prospective buyers.',
   },
 ];
 
