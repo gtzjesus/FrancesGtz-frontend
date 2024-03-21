@@ -23,6 +23,7 @@ const Title = styled.span`
   font-size: var(--font-xlarge);
 `;
 
+const Realtor = styled.img``;
 // ------------------------------
 // Component
 // ------------------------------
@@ -31,6 +32,7 @@ function About() {
   return (
     <StyledAbout>
       <Title>About me</Title>
+      <Realtor src="/backgrounds/frances.png"></Realtor>
     </StyledAbout>
   );
 }
