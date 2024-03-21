@@ -14,7 +14,6 @@ import styled from 'styled-components';
 // ------------------------------
 // This section has all CSS styles configured for every HTML element.
 const StyledAbout = styled.div`
-  height: 100vh;
   padding: var(--padding-medium);
   overflow-x: hidden;
 `;

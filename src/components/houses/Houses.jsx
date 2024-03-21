@@ -25,8 +25,7 @@ const WelcomeTitle = styled.div`
   font-family: 'Reenie Beanie', cursive;
   display: flex;
   justify-content: center;
-  text-transform: uppercase;
-  font-size: var(--font-small);
+  font-size: var(--font-medium);
   border-bottom: 1px solid var(--color-white);
   border-top: 1px solid var(--color-white);
   margin: 1em 0;
