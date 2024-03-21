@@ -31,7 +31,9 @@ const Details = styled.div`
   padding: var(--padding-medium) 0;
 `;
 
-const Realtor = styled.img``;
+const Realtor = styled.img`
+  height: var(--logo-height);
+`;
 
 const Description = styled.span`
   font-size: var(--font-small);

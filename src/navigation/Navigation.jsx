@@ -25,7 +25,6 @@ const StyledNavigation = styled.div`
   z-index: var(--z-top);
   height: var(--height-navigation);
   color: var(--color-white);
-
   // Code logic for adding borders
   border-bottom: 1px solid var(--color-white);
 `;
@@ -36,6 +35,7 @@ const NavElements = styled.div`
   width: 100%; /* Expand the width to fill the parent container */
   max-width: 800px; /* Adjust max-width as needed */
   margin: 0 auto; /* Center the flex container horizontally */
+  padding-top: 1rem;
 `;
 
 const Element = styled.a`
@@ -44,8 +44,8 @@ const Element = styled.a`
   margin: 0 0 2em 0;
 `;
 const Logo = styled.a`
-  font-size: var(--font-medium);
-  line-height: 2rem;
+  font-size: var(--font-small);
+  line-height: 1.5rem;
   font-family: 'Reenie Beanie', cursive;
 `;
 
