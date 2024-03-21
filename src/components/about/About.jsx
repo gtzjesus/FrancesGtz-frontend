@@ -26,11 +26,16 @@ const Title = styled.span`
 const Details = styled.div`
   display: flex;
   justify-content: center;
-`;
-
-const Realtor = styled.img`
+  gap: var(--gap-medium);
   padding: var(--padding-medium) 0;
 `;
+
+const Realtor = styled.img``;
+
+const Description = styled.span`
+  font-size: var(--font-small);
+`;
+
 // ------------------------------
 // Component
 // ------------------------------
@@ -41,6 +46,9 @@ function About() {
       <Title>About Me</Title>
       <Details>
         <Realtor src="/backgrounds/frances.png"></Realtor>
+        <Description>
+          My mission is to match you with a home that complements you.
+        </Description>
       </Details>
     </StyledAbout>
   );
