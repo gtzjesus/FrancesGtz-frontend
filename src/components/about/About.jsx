@@ -16,6 +16,7 @@ import styled from 'styled-components';
 const StyledAbout = styled.div`
   height: 100vh;
   padding: var(--padding-medium);
+  overflow-x: hidden;
 `;
 
 const Title = styled.span`
