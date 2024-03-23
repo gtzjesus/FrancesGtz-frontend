@@ -23,11 +23,23 @@ const Title = styled.span`
   font-size: var(--font-xlarge);
 `;
 
+const SectionTitle = styled.span`
+  font-family: 'Reenie Beanie', cursive;
+  font-size: var(--font-small);
+  border-bottom: 1px solid var(--color-white);
+`;
+
 const Details = styled.div`
   display: flex;
   justify-content: center;
   gap: var(--gap-medium);
   padding: var(--padding-medium) 0;
+`;
+
+const SectionDetails = styled.div`
+  display: flex;
+  justify-content: space-between;
+  gap: var(--gap-small);
 `;
 
 const Realtor = styled.img`
@@ -36,6 +48,16 @@ const Realtor = styled.img`
 
 const Description = styled.span`
   font-size: var(--font-small);
+`;
+
+const SectionDescription = styled.span`
+  font-size: var(--font-xsmall);
+`;
+
+const Section = styled.div`
+  display: flex;
+  flex-direction: column;
+  gap: var(--gap-large);
 `;
 
 // ------------------------------
@@ -52,6 +74,22 @@ function About() {
           My mission is to match you with a home that complements you.
         </Description>
       </Details>
+      <hr />
+      <SectionDetails>
+        <Section>
+          <SectionTitle>section1</SectionTitle>
+          <SectionDescription>Description</SectionDescription>
+        </Section>
+        <Section>
+          <SectionTitle>section2</SectionTitle>
+          <SectionDescription>Description</SectionDescription>
+        </Section>
+        <Section>
+          <SectionTitle>section3</SectionTitle>
+          <SectionDescription>Description</SectionDescription>
+        </Section>
+      </SectionDetails>
+      <hr />
     </StyledAbout>
   );
 }
