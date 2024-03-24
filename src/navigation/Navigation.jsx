@@ -44,9 +44,9 @@ const Element = styled.a`
   margin: 0 0 2em 0;
 `;
 const Logo = styled.a`
+  font-family: 'Reenie Beanie', cursive;
   font-size: var(--font-small);
   line-height: 1.5rem;
-  font-family: 'Reenie Beanie', cursive;
 `;
 
 // ------------------------------

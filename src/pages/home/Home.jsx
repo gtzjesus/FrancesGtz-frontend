@@ -7,6 +7,7 @@ import Houses from '../../components/houses/Houses';
 import About from '../../components/about/About';
 import Faqs from '../../components/faqs/Faqs';
 import Millennium from '../../components/millennium/Millennium';
+import Form from '../../components/form/Form';
 
 const ResponsiveContainer = styled.div`
   @media (min-width: 768px) {
@@ -28,6 +29,7 @@ function Home() {
         <About />
         <Faqs />
         <Millennium />
+        <Form />
       </ResponsiveContainer>
     </>
   );
