@@ -8,6 +8,7 @@ import About from '../../components/about/About';
 import Faqs from '../../components/faqs/Faqs';
 import Millennium from '../../components/millennium/Millennium';
 import Form from '../../components/form/Form';
+import Footer from '../../footer/Footer';
 
 const ResponsiveContainer = styled.div`
   @media (min-width: 768px) {
@@ -30,6 +31,7 @@ function Home() {
         <Faqs />
         <Millennium />
         <Form />
+        <Footer />
       </ResponsiveContainer>
     </>
   );
