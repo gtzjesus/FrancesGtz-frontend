@@ -90,17 +90,19 @@ function About() {
         </Section>
       </SectionDetails>
       <br />
+      <br />
+
       <SectionDetails>
         <Section>
-          <SectionTitle>Passionate</SectionTitle>
+          <SectionTitle>Trustworthy</SectionTitle>
           <SectionDescription>
-            For helping clients achieve home ownership goals.
+            In providing a smooth and successful home buying experience.
           </SectionDescription>
         </Section>
         <Section>
-          <SectionTitle>Dedicated</SectionTitle>
+          <SectionTitle>Experienced</SectionTitle>
           <SectionDescription>
-            With years of expertise in the real estate market.
+            By providing guidance every step of the way towards this journey.
           </SectionDescription>
         </Section>
       </SectionDetails>
