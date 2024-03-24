@@ -39,7 +39,6 @@ const Details = styled.div`
 
 const SectionDetails = styled.div`
   display: flex;
-  justify-content: space-between;
   gap: var(--gap-medium);
 `;
 
@@ -58,7 +57,7 @@ const SectionDescription = styled.span`
 const Section = styled.div`
   display: flex;
   flex-direction: column;
-  gap: var(--gap-large);
+  gap: var(--gap-medium);
 `;
 
 // ------------------------------
@@ -76,6 +75,21 @@ function About() {
         </Description>
       </Details>
       <hr />
+      <SectionDetails>
+        <Section>
+          <SectionTitle>Passionate</SectionTitle>
+          <SectionDescription>
+            For helping clients achieve home ownership goals.
+          </SectionDescription>
+        </Section>
+        <Section>
+          <SectionTitle>Dedicated</SectionTitle>
+          <SectionDescription>
+            With years of expertise in the real estate market.
+          </SectionDescription>
+        </Section>
+      </SectionDetails>
+      <br />
       <SectionDetails>
         <Section>
           <SectionTitle>Passionate</SectionTitle>
