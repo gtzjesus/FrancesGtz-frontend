@@ -53,7 +53,7 @@ const StyledForm = styled.form`
 
 const FormTitle = styled.span`
   font-family: 'Reenie Beanie', cursive;
-  font-size: var(--font-large);
+  font-size: var(--font-xlarge);
 `;
 
 const FormGroup = styled.div`
