@@ -39,7 +39,7 @@ const Details = styled.div`
 const SectionDetails = styled.div`
   display: flex;
   justify-content: space-between;
-  gap: var(--gap-small);
+  gap: var(--gap-medium);
 `;
 
 const Realtor = styled.img`
@@ -77,19 +77,24 @@ function About() {
       <hr />
       <SectionDetails>
         <Section>
-          <SectionTitle>section1</SectionTitle>
-          <SectionDescription>Description</SectionDescription>
+          <SectionTitle>Passionate</SectionTitle>
+          <SectionDescription>
+            For helping clients achieve home ownership goals.
+          </SectionDescription>
         </Section>
         <Section>
-          <SectionTitle>section2</SectionTitle>
-          <SectionDescription>Description</SectionDescription>
+          <SectionTitle>Dedicated</SectionTitle>
+          <SectionDescription>
+            With years of expertise in the real estate market.
+          </SectionDescription>
         </Section>
         <Section>
-          <SectionTitle>section3</SectionTitle>
-          <SectionDescription>Description</SectionDescription>
+          <SectionTitle>Ownership</SectionTitle>
+          <SectionDescription>
+            A trusted realtor for your journey on finding your dream home.
+          </SectionDescription>
         </Section>
       </SectionDetails>
-      <hr />
     </StyledAbout>
   );
 }
