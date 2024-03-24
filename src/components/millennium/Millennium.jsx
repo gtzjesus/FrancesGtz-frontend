@@ -54,7 +54,10 @@ function Millennium() {
           Millennium 2000 is deeply involved with the El Paso community.
         </Title>
 
-        <SubTitle>A respected and trustworthy real estate company.</SubTitle>
+        <SubTitle>
+          A reputable and reliable real estate firm, known for our commitment to
+          serving our clients.
+        </SubTitle>
         <StyledButton
           href="https://m2krealty.org"
           target="_blank"
