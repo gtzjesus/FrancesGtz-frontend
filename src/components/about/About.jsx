@@ -27,6 +27,7 @@ const SectionTitle = styled.span`
   font-family: 'Reenie Beanie', cursive;
   font-size: var(--font-small);
   border-bottom: 1px solid var(--color-white);
+  width: fit-content;
 `;
 
 const Details = styled.div`
@@ -86,12 +87,6 @@ function About() {
           <SectionTitle>Dedicated</SectionTitle>
           <SectionDescription>
             With years of expertise in the real estate market.
-          </SectionDescription>
-        </Section>
-        <Section>
-          <SectionTitle>Ownership</SectionTitle>
-          <SectionDescription>
-            A trusted realtor for your journey on finding your dream home.
           </SectionDescription>
         </Section>
       </SectionDetails>
