@@ -27,3 +27,12 @@ hr {
   margin: 1em 0;
   padding: 0;
 }
+
+/* // FAQS */
+/* OPEN STATE */
+
+.open .number,
+.open .title {
+  color: var(--color-yellow);
+  font-size: var(--font-small);
+}

@@ -32,13 +32,12 @@ const GlobalStyles = createGlobalStyle`
     /* Backrounds */
     --background-primary: #070606;
     --background-secondary: #ffff;
-    --background-third: #e7e167;
 
 
     /* Colors */
     --color-red: #991b1b;
     --color-black: #070606;
-    --color-yellow: #e7e167;
+    --color-yellow: #FFB444;
     --color-white: #ffff;
     --color-blue: #455e71;
     --color-green: #6A7744;

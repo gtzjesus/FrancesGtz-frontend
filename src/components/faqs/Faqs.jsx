@@ -60,7 +60,7 @@ const Title = styled.span`
 `;
 
 const Special = styled.span`
-  color: var(--color-black);
+  color: var(--color-yellow);
   font-size: var(--font-large);
 `;
 
