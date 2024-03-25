@@ -26,13 +26,15 @@ function Home() {
         <Landing />
       </ResponsiveContainer>
       <Houses />
-      <ResponsiveContainer>
+      <ResponsiveContainer id="about-section">
         <About />
         <Faqs />
         <Millennium />
-        <Form />
-        <Footer />
       </ResponsiveContainer>
+      <ResponsiveContainer id="contact-section">
+        <Form />
+      </ResponsiveContainer>
+      <Footer />
     </>
   );
 }
