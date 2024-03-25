@@ -39,11 +39,13 @@ const NavElements = styled.div`
   padding-top: 1rem;
 `;
 
-// const Element = styled.a`
-//   font-size: var(--font-xsmall);
-//   border-bottom: 1px solid var(--color-white);
-//   margin: 0 0 2em 0;
-// `;
+const Element = styled.a`
+  font-size: var(--font-xsmall);
+  border-bottom: 1px solid var(--color-white);
+  margin: 0 0 2em 0;
+  cursor: pointer;
+`;
+
 const Logo = styled.a`
   font-family: 'Reenie Beanie', cursive;
   font-size: var(--font-small);
@@ -59,30 +61,34 @@ function Navigation() {
     <>
       <StyledNavigation>
         <NavElements>
-          <Link
-            to="about-section"
-            smooth={true}
-            duration={500}
-            spy={true}
-            exact="true"
-            offset={-80} // Adjust this offset based on your header height
-          >
-            about me
-          </Link>
+          <Element>
+            <Link
+              to="about-section"
+              smooth={true}
+              duration={500}
+              spy={true}
+              exact="true"
+              offset={-80} // Adjust this offset based on your header height
+            >
+              about me
+            </Link>
+          </Element>
           <Logo>
             Frances <br />
             Gutierrez
           </Logo>
-          <Link
-            to="contact-section"
-            smooth={true}
-            duration={500}
-            spy={true}
-            exact="true"
-            offset={-80} // Adjust this offset based on your header height
-          >
-            contact
-          </Link>
+          <Element>
+            <Link
+              to="contact-section"
+              smooth={true}
+              duration={500}
+              spy={true}
+              exact="true"
+              offset={-80} // Adjust this offset based on your header height
+            >
+              contact
+            </Link>
+          </Element>
         </NavElements>
       </StyledNavigation>
     </>
